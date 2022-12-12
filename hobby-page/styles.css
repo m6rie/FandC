@@ -1,0 +1,92 @@
+html {
+  font-family: 'Albert Sans', sans-serif;;
+}
+
+body {
+  max-width: 800px;
+  border: 1px solid grey;
+  margin: auto;
+}
+
+footer, header {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  line-height: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  margin: 0;
+  line-height: 30px;
+}
+
+blockquote::before {
+  content: '\201C';
+}
+
+blockquote::after {
+  content: '\201D';
+}
+
+figure {
+  background-color: rgb(210, 210, 210);
+  align-self: center;
+  padding: 15px;
+  border-radius: 5px;
+  width: fit-content;
+
+}
+
+header {
+  text-align: center;
+}
+
+#snowing {
+  width: 50%;
+  height: auto;
+  border-radius: 1.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+#snowflake {
+  width: 30px;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.text {
+  text-align: justify;
+  padding: 20px 40px;
+}
+
+#snow-link {
+  color: rgb(0, 132, 255);
+}
+
+details {
+  padding: 0px 40px 20px;
+}
+
+.checkbox {
+  accent-color: green;
+}
