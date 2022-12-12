@@ -1,0 +1,76 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025) and (max-width: px) {
+
+}
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+html {
+  font-family: 'Albert Sans', sans-serif;
+  padding: 10px 30px;
+  background-color: #FFFBEB;
+  color: #251749;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 300px;
+  height: auto;
+  border: solid black 2px;
+  border-radius: 5px;
+  background-color: #251749;
+  margin: 20px;
+}
+
+.card img {
+  max-width: 300px;
+  width: 100%;
+  border-bottom: solid black 1px;
+}
+
+.card-text {
+  padding: 0 10px;
+  color: rgb(132, 226, 170);
+  /* background-color: #495579; */
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.hidden {
+  /* visibility: hidden; */
+  display: none;
+  height: fit-content !important;
+}
+
+.visible {
+  /* visibility: visible; */
+  display: block;
+  height: fit-content !important;
+}
