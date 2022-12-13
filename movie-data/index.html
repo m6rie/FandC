@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/203bddeb95.js" crossorigin="anonymous"></script>
+    <title>Movie Data</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Movie Repertoire</h1>
+    </div>
+
+    <table id="movies-display">
+      <thead>
+        <th id="title-column">Title <span onclick="sortTable(0)" class="sorting-arrow"><i class="fa-solid fa-sort-down"></i></span></th>
+        <th id="year-column">Year <span onclick="sortTable(1)" class="sorting-arrow"><i class="fa-solid fa-sort-down"></i></span></th>
+        <th id="runtime-column">Runtime <span onclick="sortTable(2)" class="sorting-arrow"><i class="fa-solid fa-sort-down"></i></span></th>
+        <th id="ratings-column">Ratings <span onclick="sortTable(3)" class="sorting-arrow"><i class="fa-solid fa-sort-down"></i></span></th>
+        <th id="cast-column">Cast <span onclick="sortTable(4)" class="sorting-arrow"><i class="fa-solid fa-sort-down"></i></span></th>
+        <th id="plot-column">Plot <span onclick="sortTable(5)" class="sorting-arrow"><i class="fa-solid fa-sort-down"></i></span></th>
+      </thead>
+
+      <tbody>
+
+      </tbody>
+    </table>
+    <script src="./app.js"></script>
+  </body>
+</html>

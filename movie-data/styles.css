@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Albert Sans', sans-serif;
+  /* font-weight: 200; */
+  padding: 0;
+  border: 0;
+  background-color: #FFFBEB;
+  color: #251749;
+  text-align: center;
+  margin: 0;
+  background: url("https://img.freepik.com/vecteurs-libre/collection-bandes-films-vectoriels-3d_1017-8620.jpg?w=900&t=st=1670955072~exp=1670955672~hmac=5aab32339f4245835c1085af3301d4b6e7ede643e72175da90dfe19a99037ac3");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header {
+  background-color: rgb(19, 18, 16);
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+tr, td, th, table {
+  border: solid black 1px;
+}
+
+th {
+  background-color: rgb(209, 201, 185);
+}
+
+th:hover {
+  background-color: red;
+}
+
+tbody>:nth-child(1), tbody>:nth-child(3) {
+  background-color: rgb(225, 120, 225) !important;
+}
+
+tbody>:nth-child(2), tbody>:nth-child(4) {
+  background-color: rgb(120, 225, 192) !important;
+}
+
+/* tbody>tr>:nth-child(1) {
+  background-color: yellow;
+} */
+
+#title-column {
+  /* max-width: 150px; */
+  width: 200px;
+}
+#year-column {
+  /* max-width: 100px; */
+  width: 50px;
+}
+#runtime-column {
+  /* max-width: ; */
+  width: 80px;
+}
+#ratings-column {
+  /* max-width: ; */
+  width: 80px;
+}
+#cast-column {
+  /* max-width: ; */
+  width: 200px;
+}
+#plot-column {
+  /* max-width: 600px; */
+  width: 400px;
+}
+.sorting-arrow {
+  padding: 0 10px;
+}
