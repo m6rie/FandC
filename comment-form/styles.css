@@ -1,14 +1,16 @@
-html {
+body {
   font-family: 'Albert Sans', sans-serif;
   padding: 10px 30px;
   background-color: #0e0b18;
   color: #FFFBEB;
+  text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
   width: 250px;
+  margin: auto;
 }
 
 
@@ -26,6 +28,10 @@ form {
   margin: 8px;
   font-family: 'Albert Sans', sans-serif;
   width: 230px;
+}
+
+#counter {
+  /* justify-content: center; */
 }
 
 #submit {
