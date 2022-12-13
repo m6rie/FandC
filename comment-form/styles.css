@@ -1,0 +1,39 @@
+html {
+  font-family: 'Albert Sans', sans-serif;
+  padding: 10px 30px;
+  background-color: #0e0b18;
+  color: #FFFBEB;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+
+#name {
+  margin: 8px;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+#email {
+  margin: 8px;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+#comment {
+  margin: 8px;
+  font-family: 'Albert Sans', sans-serif;
+  width: 230px;
+}
+
+#submit {
+  margin: 8px;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+.red {
+  color: red !important;
+  background-color: red !important;
+}
