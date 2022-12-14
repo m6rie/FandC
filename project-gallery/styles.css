@@ -25,7 +25,6 @@
 html {
   font-family: 'Albert Sans', sans-serif;
   padding: 10px 30px;
-  background-color: #FFFBEB;
   color: #251749;
 }
 
@@ -73,4 +72,8 @@ details > summary::-webkit-details-marker {
   /* visibility: visible; */
   display: block;
   height: fit-content !important;
+}
+a {
+  text-decoration: none;
+  color: rgb(132, 226, 170);
 }
