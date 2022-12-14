@@ -1,67 +1,89 @@
-const nameForm = document.querySelector("#name")
-const emailForm = document.querySelector("#email")
-const commentForm = document.querySelector("#comment")
-const counter = document.querySelector("#counter")
-const submit = document.querySelector("#submit")
-const body = document.body
-const commentList = document.querySelector("#comment-list")
+// skfjhv@gmail.com
 
-counter.innerHTML = "0/140"
-const maxCount = 140
+const nameForm = document.querySelector("#name");
+const emailForm = document.querySelector("#email");
+const commentForm = document.querySelector("#comment");
+const counter = document.querySelector("#counter");
+const commentList = document.querySelector("#comment-list");
+const form = document.querySelector("#comment-form");
+let allComment = []
 
-comment.addEventListener("keyup", function(e){
-  console.log(comment.innerHTML.length)
+counter.innerHTML = "0/140";
+const maxCount = 140;
 
-  counter.innerHTML = `${comment.value.length}/140`
+commentForm.addEventListener("keyup", countChar)
 
-  if((comment.value.length+1) > maxCount) {
-    const rouge = document.createElement("span")
-    comment.appendChild(rouge)
-    rouge.classList.add("red")
+// Function to count character
+function countChar() {
+  counter.innerHTML = `${commentForm.value.length}/140`;
 
-    const dayyt = JSON.stringify(comment.value)
-    console.log(dayyt)
-
-    dayyt.classList.add("red")
+  if((commentForm.value.length) > maxCount) {
+    commentForm.classList.add("red");
+  } else {
+    commentForm.classList.remove("red");
   }
-})
-const str = comment.innerHTML
-
-// for(let i = 0; i < str.length; i++) {
-//   const dayyt = JSON.stringify(comment.value)
-//   console.log(str)
-//   console.log(str.charAt(i))
-//   console.log(dayyt)
-
-//   if(str.charAt(i) > 140) {
-//     str.charAt(i).classList.add("red")
-//   }
-// }
-
-submit.addEventListener("click", newComment())
-
-function newComment() {
-  console.log("bou")
-
-
-  const commentItem = document.createElement("div")
-  commentList.appendChild(commentItem)
-  // commentItem.classList.add("comment-item")
-  let commentName = document.createElement("p")
-  let commentEmail = document.createElement("p")
-  let commentContent = document.createElement("p")
-
-  commentName = nameForm.innerHTML
-  commentEmail = emailForm.innerHTML
-  commentContent = commentForm.innerHTML
-  commentItem.appendChild(commentName)
-  commentItem.appendChild(commentEmail)
-  commentItem.appendChild(commentContent)
-  // commentItem.innerHTML = "go"
-
 }
 
+// CREATE
+form.addEventListener("submit", function(e){
+  if(commentForm.value.length > maxCount) {
+    alert("You have too many character. Please stay under the 140 character limit.")
+  } else if ((nameForm.value == "") || (emailForm.value == "")) {
+    alert("Don't forget your name and email address")
+  } else {
+    newComment(e);
+  }
 
-// nameForm.innerHTML =
-// emailForm.innerHTML =
-// commentForm.innerHTML =
+  e.preventDefault()
+})
+
+function newComment(e) {
+  let commentItem = document.createElement("div");
+  let commentName = document.createElement("p");
+  let commentEmail = document.createElement("p");
+  let commentContent = document.createElement("p");
+
+  commentItem.classList.add("comment-item")
+  commentName.classList.add("comment-name")
+  commentEmail.classList.add("comment-email")
+  commentContent.classList.add("comment-content")
+
+  const commentInput = {
+    fullname: e.target.elements.fullname.value,
+    email: e.target.elements.email.value,
+    commentsection: e.target.elements.commentsection.value,
+    returnName : function() {
+      return this.fullname
+    },
+    returnEmail : function() {
+      return this.email
+    },
+    returnComment : function() {
+      return this.commentsection
+    }
+  }
+
+  allComment.push(commentInput)
+  console.log(allComment)
+
+  // commentName.innerHTML = nameForm.value;
+  // commentEmail.innerHTML = emailForm.value;
+  // commentContent.innerHTML = commentForm.value;
+
+  commentName.innerHTML = `${(commentInput.fullname).substring(0,1).toUpperCase()}` + `${(commentInput.fullname).substring(1).toLowerCase()}`
+  commentEmail.innerHTML = (emailForm.value).toLowerCase();
+  commentContent.innerHTML = commentInput.returnComment()
+
+  // commentEmail.innerHTML = `${commentInput.email}`
+  // commentContent.innerHTML = `${commentInput.commentsection}`
+
+  nameForm.value = "";
+  emailForm.value = "";
+  commentForm.value = "";
+  counter.innerHTML = "0/140";
+
+  commentItem.append(commentName);
+  commentItem.append(commentEmail);
+  commentItem.append(commentContent);
+  commentList.appendChild(commentItem);
+}
