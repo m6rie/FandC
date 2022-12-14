@@ -2,6 +2,9 @@ const card = document.querySelectorAll(".card")
 const det = document.querySelectorAll(".hidden")
 const showMore = document.getElementsByClassName("more")
 const closing = document.getElementsByClassName("close-details")
+const body = document.body
+
+body.style.backgroundColor = "#FFFBEB"
 
 for (let i = 0; i < showMore.length; i++) {
   showMore[i].addEventListener("click", function(e) {
