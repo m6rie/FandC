@@ -75,5 +75,5 @@ details > summary::-webkit-details-marker {
 }
 a {
   text-decoration: none;
-  color: rgb(132, 226, 170);
+  color: rgb(132, 226, 170) !important;
 }
