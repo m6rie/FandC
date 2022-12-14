@@ -1,5 +1,5 @@
 html {
-  font-family: 'Albert Sans', sans-serif;;
+  font-family: 'Albert Sans', sans-serif;
 }
 
 body {
@@ -89,4 +89,34 @@ details {
 
 .checkbox {
   accent-color: green;
+}
+
+#quizz {
+  padding: 4px 15px;
+  background-color: rgb(60, 146, 220);
+  width: fit-content;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.button-quizz {
+  font-family: 'Albert Sans', sans-serif;
+  padding: 3px 7px;
+  margin: 3px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.red {
+  background-color: red !important;
+  color: white !important;
+}
+
+.green {
+  background-color: green !important;
+  color: white !important;
 }
