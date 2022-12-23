@@ -32,6 +32,7 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .card {
@@ -46,7 +47,8 @@ html {
 .card img {
   max-width: 300px;
   width: 100%;
-  border-bottom: solid black 1px;
+  height: 150px;
+  /* border-bottom: solid black 1px; */
 }
 
 .card-text {
@@ -55,17 +57,10 @@ html {
   /* background-color: #495579; */
 }
 
-details > summary {
-  list-style: none;
-}
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
 .hidden {
   /* visibility: hidden; */
   display: none;
-  height: fit-content !important;
+  height: 0px !important;
 }
 
 .visible {
