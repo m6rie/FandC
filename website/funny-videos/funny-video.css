@@ -1,0 +1,102 @@
+@media (max-width: 480px) {
+  #caroussel {
+    width: 300px;
+    /* height: 400px; */
+  }
+  #video {
+    width: 250px;
+    /* height: 300px; */
+  }
+  #videoname {
+    width: 250px;
+  }
+  .fa-solid {
+    padding: 5px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #caroussel {
+    width: 480px;
+    /* height: 400px; */
+    padding: 10px;
+    max-width: 500px;
+
+  }
+  #video {
+    max-width: 500px;
+    width: 480px;
+    height: 300px;
+  }
+  .fa-solid {
+    padding: 5px;
+    font-size: 18px;
+  }
+  #videoname {
+    width: 480px;
+  }
+}
+
+@media (min-width: 769px) {
+  #caroussel {
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+  }
+  #video {
+    width: 500px;
+    height: 300px;
+  }
+  .fa-solid {
+    padding: 15px;
+    font-size: 24px;
+  }
+  #videoname {
+    width: 500px;
+  }
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+}
+
+#caroussel {
+  /* width: 500px;
+  height: 400px; */
+  padding: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* #video {
+  width: 500px;
+  height: 300px;
+} */
+
+.fa-solid {
+  border-radius: 50%;
+  /* padding: 15px; */
+  background-color: pink;
+  /* font-size: 24px; */
+}
+
+h1 {
+  text-align: center;
+}
+
+#videoname {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+}
