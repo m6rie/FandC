@@ -1,0 +1,93 @@
+@media (max-width: 480px) {
+  .index-div {
+    max-width: 40px;
+    max-height: 40px;
+    height: 30px;
+    font-size: 30px;
+  }
+
+  .enterbtn {
+    left: 35%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .index-div {
+    max-width: 60px;
+    max-height: 60px;
+    height: 50px;
+    font-size: 50px;
+  }
+  .enterbtn {
+    left: 40%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-div {
+    max-width: 65px;
+    max-height: 65px;
+    height: 55px;
+    font-size: 55px;
+  }
+  .enterbtn {
+    left: 42%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .index-div {
+    max-width: 70px;
+    max-height: 70px;
+    height: 60px;
+    font-size: 60px;
+  }
+  .enterbtn {
+    left: 45%;
+  }
+}
+
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.enterbtn {
+  top: 40%;
+  position: absolute;
+  z-index: 94;
+  animation: rainbows 3s infinite;
+  padding: 20px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@keyframes rainbows {
+  0% { background-color: #F6E8EA; }
+  25% { background-color: #EF626C; }
+  50% { background-color: #22181C; }
+  75% { background-color: #312F2F; }
+  100% { background-color: #84DCCF; }
+  0% { color: #22181C; }
+  25% { color: #84DCCF; }
+  50% { color: #F6E8EA; }
+  75% { color: #EF626C; }
+  100% { color: #312F2F; }
+}
+
+#index-animation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-div {
+  width: 100%;
+}
