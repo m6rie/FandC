@@ -53,3 +53,5 @@ This final project is the culmination of the previous projects. It includes:
 - setInterval
 - Math.random()
 - Math.floor()
+- Flexbox
+- Grid
