@@ -6,7 +6,6 @@ const commentForm = document.querySelector("#comment");
 const counter = document.querySelector("#counter");
 const commentList = document.querySelector("#comment-list");
 const form = document.querySelector("#comment-form");
-let allComment = []
 
 counter.innerHTML = "0/140";
 const maxCount = 140;
@@ -24,6 +23,35 @@ function countChar() {
   }
 }
 
+// when the page load, get the comments saved in localstorage and display them on the page
+window.addEventListener("load", function(e) {
+  allComment = JSON.parse(this.localStorage.getItem("allComment")) || []
+
+  allComment.forEach(commentInput => {
+    let commentItem = document.createElement("div");
+    let commentName = document.createElement("p");
+    let commentEmail = document.createElement("p");
+    let commentContent = document.createElement("p");
+
+    commentItem.classList.add("comment-item")
+    commentName.classList.add("comment-name")
+    commentEmail.classList.add("comment-email")
+    commentContent.classList.add("comment-content")
+
+    commentName.innerHTML = `${(commentInput.fullname).substring(0,1).toUpperCase()}` + `${(commentInput.fullname).substring(1).toLowerCase()}`
+    commentEmail.innerHTML = (emailForm.value).toLowerCase();
+    commentEmail.innerHTML = `${commentInput.email}`
+    commentContent.innerHTML = `${commentInput.commentsection}`
+
+    commentItem.append(commentName);
+    commentItem.append(commentEmail);
+    commentItem.append(commentContent);
+    commentList.appendChild(commentItem);
+  })
+  e.preventDefault()
+})
+
+
 // CREATE
 form.addEventListener("submit", function(e){
   if(commentForm.value.length > maxCount) {
@@ -33,9 +61,9 @@ form.addEventListener("submit", function(e){
   } else {
     newComment(e);
   }
-
   e.preventDefault()
 })
+
 
 function newComment(e) {
   let commentItem = document.createElement("div");
@@ -48,7 +76,7 @@ function newComment(e) {
   commentEmail.classList.add("comment-email")
   commentContent.classList.add("comment-content")
 
-  const commentInput = {
+  commentInput = {
     fullname: e.target.elements.fullname.value,
     email: e.target.elements.email.value,
     commentsection: e.target.elements.commentsection.value,
@@ -64,26 +92,25 @@ function newComment(e) {
   }
 
   allComment.push(commentInput)
-  console.log(allComment)
+
+  localStorage.setItem("allComment", JSON.stringify(allComment))
 
   // commentName.innerHTML = nameForm.value;
   // commentEmail.innerHTML = emailForm.value;
   // commentContent.innerHTML = commentForm.value;
-
   commentName.innerHTML = `${(commentInput.fullname).substring(0,1).toUpperCase()}` + `${(commentInput.fullname).substring(1).toLowerCase()}`
   commentEmail.innerHTML = (emailForm.value).toLowerCase();
   commentContent.innerHTML = commentInput.returnComment()
 
   // commentEmail.innerHTML = `${commentInput.email}`
   // commentContent.innerHTML = `${commentInput.commentsection}`
+  commentItem.append(commentName);
+  commentItem.append(commentEmail);
+  commentItem.append(commentContent);
+  commentList.appendChild(commentItem);
 
   nameForm.value = "";
   emailForm.value = "";
   commentForm.value = "";
   counter.innerHTML = "0/140";
-
-  commentItem.append(commentName);
-  commentItem.append(commentEmail);
-  commentItem.append(commentContent);
-  commentList.appendChild(commentItem);
 }
