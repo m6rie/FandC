@@ -51,13 +51,6 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-/* button {
-  background-color: #186d6d;
-  padding: 10px;
-  color: #fff;
-  border-radius: 25px;
-} */
-
 .page-content {
   display: flex;
   flex-direction: row;
@@ -86,4 +79,18 @@ a {
 #part-six .links {
   text-align: center;
   font-size: x-large;
+}
+
+.button a {
+  background-color: #186d6d;
+  color: #fff !important;
+  padding: 8px 15px;
+  border-radius: 7px;
+  font-size: large;
+  border: solid 2px #330036;
+}
+
+.button:hover a {
+  background-color: #afdada;
+  color: #330036 !important;
 }
