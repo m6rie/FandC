@@ -30,10 +30,14 @@ This final project is the culmination of the previous projects. It includes:
 
 - transition page with animation
 - side menu with clickable links to navigate the page faster
-  <img src="./website/img/side-menu.png" width="100" alt="side menu with clickable title">
+
+  <img src="./website/img/side-menu.png" width="150" alt="side menu with clickable title">
+
 - header
 - a clickable avatar-menu
-  <img src="./website/img/icon-menu.png" width="100" alt="icon-menu and linked page">
+
+  <img src="./website/img/icon-menu.png" width="150" alt="icon-menu and linked page">
+
 - a carousel
 
 ## Concepts used for the project are:
