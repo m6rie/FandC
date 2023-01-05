@@ -17,7 +17,7 @@ enterbtn.addEventListener("click", function(e) {
 // Event listener for them to appear
 window.addEventListener("load", poppingEmoji)
 // Setting the interval of 1 seconde between each new emoji's appearance
-setInterval(poppingEmoji, 1000)
+setInterval(poppingEmoji, 100)
 
 function poppingEmoji() {
   emojiArray = ['😊','💃🏾','🎉','😽','👩🏾‍🍳','👩🏾‍💻','✨','🧶','🔥','🌝','🤌🏾','🥳','🥸']
