@@ -30,10 +30,10 @@ This final project is the culmination of the previous projects. It includes:
 
 - transition page with animation
 - side menu with clickable links to navigate the page faster
-  ![side menu with clickable title](https://github.com/m6rie/FandC/blob/main/website/img/side-menu.png?raw=true)
+  <img src="./website/img/side-menu.png" width="100" alt="side menu with clickable title">
 - header
 - a clickable avatar-menu
-  ![icon-menu and linked page](https://github.com/m6rie/FandC/blob/main/website/img/icon-menu.png?raw=true)
+  <img src="./website/img/icon-menu.png" width="100" alt="icon-menu and linked page">
 - a carousel
 
 ## Concepts used for the project are:
