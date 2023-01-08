@@ -1,37 +1,29 @@
 @media (max-width: 480px) {
   #caroussel {
     width: 300px;
-    /* height: 400px; */
+    height: 250px;
+    max-width: 320px;
   }
   #video {
-    width: 250px;
-    /* height: 300px; */
+    width: 300px;
+    height: 150px;
+    max-width: 320px;
   }
   #videoname {
-    width: 250px;
-  }
-  .fa-solid {
-    padding: 5px;
-    font-size: 18px;
+    width: 300px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   #caroussel {
     width: 480px;
-    /* height: 400px; */
-    padding: 10px;
+    height: 400px;
     max-width: 500px;
-
   }
   #video {
     max-width: 500px;
     width: 480px;
     height: 300px;
-  }
-  .fa-solid {
-    padding: 5px;
-    font-size: 18px;
   }
   #videoname {
     width: 480px;
@@ -42,15 +34,10 @@
   #caroussel {
     width: 500px;
     height: 400px;
-    padding: 10px;
   }
   #video {
     width: 500px;
     height: 300px;
-  }
-  .fa-solid {
-    padding: 15px;
-    font-size: 24px;
   }
   #videoname {
     width: 500px;
@@ -62,12 +49,6 @@ body {
   margin: 0;
 }
 
-#caroussel {
-  /* width: 500px;
-  height: 400px; */
-  padding: 10px;
-}
-
 section {
   display: flex;
   flex-direction: row;
@@ -76,16 +57,12 @@ section {
   margin: 10px;
 }
 
-/* #video {
-  width: 500px;
-  height: 300px;
-} */
-
 .fa-solid {
-  border-radius: 50%;
-  /* padding: 15px; */
-  background-color: pink;
-  /* font-size: 24px; */
+  font-size: 50px;
+  cursor: pointer;
+  color: #186d6d;
+  padding: 0 10px;
+  height: 100px;
 }
 
 h1 {
@@ -99,4 +76,22 @@ h1 {
   padding: 10px 0;
   background-color: black;
   color: white;
+}
+
+.unselecteddot {
+  color: rgb(153, 151, 151);
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.selecteddot {
+  color: #186d6d;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+#dots {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
 }

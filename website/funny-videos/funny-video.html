@@ -33,16 +33,28 @@
     <h1>Funny videos</h1>
     <section>
       <div id="arrow-backward">
-        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-caret-left"></i>
       </div>
       <div id="caroussel">
         <div class="videos">
           <p id="videoname"></p>
           <iframe id="video" src="" frameborder="0"></iframe>
         </div>
+
+        <div id="dots">
+          <span class="dots-1 selecteddot" onclick="firstDot()"><i class="fas fa-circle"></i></span>
+          <span class="dots-2 unselecteddot" onclick="secondDot()"><i class="fas fa-circle"></i></span>
+          <span class="dots-3 unselecteddot" onclick="thirdDot()"><i class="fas fa-circle"></i></span>
+          <span class="dots-4 unselecteddot" onclick="fourthDot()"><i class="fas fa-circle"></i></span>
+          <span class="dots-5 unselecteddot" onclick="fifthDot()"><i class="fas fa-circle"></i></span>
+          <span class="dots-6 unselecteddot" onclick="sixthDot()"><i class="fas fa-circle"></i></span>
+          <span class="dots-7 unselecteddot" onclick="seventhDot()"><i class="fas fa-circle"></i></span>
+          <span class="dots-8 unselecteddot" onclick="eighthDot()"><i class="fas fa-circle"></i></span>
+        </div>
+
       </div>
       <div id="arrow-forward">
-        <i class="fa-solid fa-chevron-right"></i>
+        <i class="fa-solid fa-caret-right"></i>
       </div>
     </section>
 
