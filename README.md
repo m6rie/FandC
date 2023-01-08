@@ -43,6 +43,7 @@ This final project is the culmination of the previous projects. It includes:
 ## Concepts used for the project are:
 
 - `eventListener`: `click`, `mouseleave`, `keyup`, `load`
+- `onclick`
 - functions
 - `map()`
 - control flow
