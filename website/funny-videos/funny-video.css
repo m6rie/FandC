@@ -12,6 +12,12 @@
   #videoname {
     width: 300px;
   }
+  #dots {
+    font-size: 10px !important;
+  }
+  .fa-solid {
+    font-size: 30px !important;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -92,6 +98,6 @@ h1 {
 
 #dots {
   text-align: center;
-  font-size: 20px;
   padding: 10px;
+  font-size: 20px;
 }
